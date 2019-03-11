@@ -1,0 +1,310 @@
+body {
+    background-color: $back_color;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font;
+    text-align: $position;
+    color: $font_color;
+}
+
+p {
+    font-family: $font;
+    text-align: $position;
+    padding-top: 1em;
+    color: $font_color;
+
+}
+
+.pris {
+    font-weight: bold;
+
+}
+
+.navbar {
+    height: 100px;
+    background-color: $back_color;
+
+    .dropdown-toggle {
+        text-align: left !important;
+    }
+
+    .navbar_logo {
+
+        text-align: center;
+
+        img {
+            width: 100px;
+
+        }
+    }
+
+    .dropdown {
+        list-style: none;
+        margin-bottom: 0;
+
+    }
+
+    .dropdown-toggle {
+        font-size: 0.9rem;
+        font-family: $font;
+        color: black;
+        text-align: $position;
+    }
+
+    .search {
+        text-align: right;
+        padding-right: 2em;
+
+        i {
+            color: black;
+            font-size: 1rem;
+
+        }
+    }
+
+    .menu_dropdown {
+        background-color: $back_color;
+
+
+        a {
+            font-family: $font;
+
+        }
+
+        a:hover {
+            color: $sign_color_1;
+        }
+
+        a:active {
+            background-color: $sign_color_1;
+        }
+    }
+}
+
+.index_carousel {
+    margin-top: 6em;
+    height: 300px;
+    margin-bottom: 0.5em;
+
+    .carousel {
+        width: 100%;
+    }
+
+    .frame_carousel {
+        height: 300px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+
+        }
+    }
+}
+
+%header_image {
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    margin-bottom: 0.5em;
+    margin-top: 6em;
+}
+
+
+.om_oss_header_image {
+    @extend %header_image;
+    background-image: url(../images/om_oss_huvudbild.jpeg);
+}
+
+
+.butiker_header_image {
+    @extend %header_image;
+    background-image: url(../images/butiker_huvudbild.jpeg);
+}
+
+.vara_juicer_header_image {
+    @extend %header_image;
+    background-image: url(../images/vara_juicer_huvudbild.jpg);
+}
+
+
+.juice_week {
+    margin-top: 2em;
+
+    p {
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .zoom_picture {
+        padding: 50px;
+        background-image: url(../images/veckans_juice.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: transform .2s;
+        width: 300px;
+        height: 200px;
+        margin: 1em auto;
+    }
+
+    .zoom_picture:hover {
+        transform: scale(1.5);
+    }
+}
+
+
+.intro_text {
+
+    @include border(8px);
+}
+
+
+.text_pics {
+
+    .butiker_map {
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            margin-top: 1em;
+            border: 0;
+        }
+    }
+
+    .image_inspo {
+
+        padding: 0;
+
+        .inspo_frame {
+            height: 250px;
+            overflow: hidden;
+
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 250px;
+
+            }
+        }
+    }
+
+    .text_info {
+        @include border(3px);
+
+        padding-top: 1em;
+    }
+}
+
+
+
+article {
+
+    padding-top: 1em;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.vara_juicer_cards {
+    @include border(6px);
+    margin-top: 1em;
+}
+
+.recipe {
+    text-align: $position;
+    border-bottom: 1px solid #ffcc00;
+
+    .recipe_frame {
+        max-height: 100%;
+        min-width: 100%;
+        overflow: hidden;
+        padding-bottom: 1em;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.gallery {
+
+    .instagram_name a {
+        text-decoration: none;
+        color: $font_color;
+    }
+
+    h3 {
+        font-family: $font;
+        font-size: 1.9rem;
+        margin-bottom: 1em;
+        text-align: $position;
+        margin-top: 2em;
+
+
+        i {
+            font-size: 1.8rem;
+            color: $sign_color_1;
+        }
+
+    }
+
+
+    .gallery_frame {
+        height: 140px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 140px;
+        }
+    }
+
+    .inspo_pic {
+        margin-bottom: 1em;
+    }
+}
+
+
+.footer {
+
+    text-align: $position;
+
+    img {
+        width: 100px;
+        margin-top: 1em;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 1.5em;
+        padding: 0;
+
+        a {
+            color: black;
+            font-family: $font;
+            font-size: 1rem;
+        }
+
+        a:hover {
+            color: $sign_color_1;
+        }
+    }
+
+
+
+    p {
+        font-size: 0.7rem;
+        margin-bottom: 1.5em;
+    }
+}
